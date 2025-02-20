@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaki Studio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav id="home">
+        <ul>
+            <li><a href="home"></a></li>
+            <li><a href="#sobremim">Sobre Mim</a></li>
+            <li><a href="#formações">Formações</a></li>
+            <li><a href="#design">Design de Interiores</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Logo e Imagem -->
+    <header>
+        <div class="logo" >
+            <h1>SWAKI STUDIO</h1>
+            <p>Designer de Interiores e Artista</p>
+        </div>
+        <div class="header-image">
+            <img src="image.png" alt="Imagem">
+        </div>
+    </header>
+
+    <!-- Linha divisória -->
+    <div class="divider"></div>
+
+    <!-- Sobre Mim -->
+    <section class="content" id="sobremim">
+        <div class="text">
+            <h2>SOBRE MIM</h2>
+            <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.</p>
+            <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.</p>
+        </div>
+        <div class="circle-image">
+            <img src="image.png" alt="Imagem Circular">
+        </div>
+    </section>
+
+    <!-- Formações -->
+    <section class="content" id="formações">
+        <div class="circle-image">
+         <img src="image.png" alt="Imagem Circular">
+        </div>
+        <div class="text">
+            <h2>FORMAÇÕES</h2>
+         <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.</p>
+         <p>Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.</p>
+       </div>
+    </section>
+
+    <!-- Design de Interiores -->
+    <section id="design">
+        <div class="design-header">
+            <h2>DESIGN DE INTERIORES</h2>
+            <div class="design-text">
+                <p>Aqui pode ir um texto sobre a seção.</p>
+            </div>
+        </div>
+        <div class="design-container">
+            <div class="project-box" data-index="1">
+                <div class="image-section">
+                    <img src="imagem1.jpg" alt="Projeto 1">
+                </div>
+                <div class="project-title">PROJETO 1</div>
+                <div class="project-text">Texto sobre o projeto 1.</div>
+            </div>
+            <div class="project-box" data-index="2">
+                <div class="image-section">
+                    <img src="imagem2.jpg" alt="Projeto 2">
+                </div>
+                <div class="project-title">PROJETO 2</div>
+                <div class="project-text">Texto sobre o projeto 2.</div>
+            </div>
+            <div class="project-box" data-index="3">
+                <div class="image-section">
+                    <img src="imagem3.jpg" alt="Projeto 3">
+                </div>
+                <div class="project-title">PROJETO 3</div>
+                <div class="project-text">Texto sobre o projeto 3.</div>
+            </div>
+            <div class="project-box" data-index="4">
+                <div class="image-section">
+                    <img src="imagem4.jpg" alt="Projeto 4">
+                </div>
+                <div class="project-title">PROJETO 4</div>
+                <div class="project-text">Texto sobre o projeto 4.</div>
+            </div>
+            <div class="project-box" data-index="5">
+                <div class="image-section">
+                    <img src="imagem5.jpg" alt="Projeto 5">
+                </div>
+                <div class="project-title">PROJETO 5</div>
+                <div class="project-text">Texto sobre o projeto 5.</div>
+            </div>
+        </div>
+    </section>
+
+    <!--GALERIA-->
+    <section id="galeria">
+        <h2>GALERIA</h2>
+        <div class="grid-container">
+            <div class="grid-item" onclick="expandImage(this)"><img src="esquileto.jpg" alt="Imagem 1"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="euu.jpg" alt="Imagem 2"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="caveirinha legal.jpg" alt="Imagem 3"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img4.jpg" alt="Imagem 4"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img5.jpg" alt="Imagem 5"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img6.jpg" alt="Imagem 6"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img7.jpg" alt="Imagem 7"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img8.jpg" alt="Imagem 8"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img9.jpg" alt="Imagem 9"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img10.jpg" alt="Imagem 10"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img11.jpg" alt="Imagem 11"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img12.jpg" alt="Imagem 12"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img13.jpg" alt="Imagem 13"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img14.jpg" alt="Imagem 14"></div>
+            <div class="grid-item" onclick="expandImage(this)"><img src="img15.jpg" alt="Imagem 15"></div>
+        </div>
+    </section>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Imagem Expandida">
+    </div>
+
+    <!--RODAPÉ-->
+    <footer>
+        <div class="topo-pagina">
+            <center><a href="#home">↑ VOLTAR AO TOPO DA PÁGINA</a></center>
+        </div>
+        <div class="footer-content">
+            <div class="info">
+                <p>Todos os Direitos reservados á pipipi</p>
+                <p>Contato</p>
+            </div>
+            <div class="branding">
+                <h2>SWAKI STUDIO</h2>
+                <p>PORTFOLIO</p>
+                <p>Designer de Interiores e Artista</p>
+            </div>
+        </div>
+    </footer>
+
+<!--JAVASCRIPT-->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let projectBoxes = document.querySelectorAll(".project-box");
+    let overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
+
+    projectBoxes.forEach((box) => {
+        box.addEventListener("click", function () {
+            // Se clicar no mesmo, volta ao normal
+            if (box.classList.contains("expanded")) {
+                box.classList.remove("expanded");
+                overlay.classList.remove("active");
+            } else {
+                // Fecha os outros
+                projectBoxes.forEach((b) => b.classList.remove("expanded"));
+                box.classList.add("expanded");
+                overlay.classList.add("active");
+            }
+        });
+    });
+
+    // Fechar ao clicar no overlay
+    overlay.addEventListener("click", function () {
+        projectBoxes.forEach((b) => b.classList.remove("expanded"));
+        overlay.classList.remove("active");
+    });
+    
+});
+function expandImage(element) {
+            const imgSrc = element.querySelector('img').src;
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').classList.add('visible');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('visible');
+        }
+
+        function expandImage(element) {
+            const imgSrc = element.querySelector('img').src;
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').classList.add('visible');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('visible');
+        }
+</script>
+
+</body>
+</html>
